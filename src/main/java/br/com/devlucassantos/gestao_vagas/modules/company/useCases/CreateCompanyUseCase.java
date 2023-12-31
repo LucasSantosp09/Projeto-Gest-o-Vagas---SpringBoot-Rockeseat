@@ -1,4 +1,4 @@
-package br.com.devlucassantos.gestao_vagas.modules.company.UseCases;
+package br.com.devlucassantos.gestao_vagas.modules.company.useCases;
 
 import br.com.devlucassantos.gestao_vagas.exceptions.UserFoundException;
 import br.com.devlucassantos.gestao_vagas.modules.company.entities.CompanyEntity;

@@ -1,4 +1,4 @@
-package br.com.devlucassantos.gestao_vagas.modules.job;
+package br.com.devlucassantos.gestao_vagas.modules.job.entities;
 
 import br.com.devlucassantos.gestao_vagas.modules.company.entities.CompanyEntity;
 import jakarta.persistence.*;
