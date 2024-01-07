@@ -1,4 +1,4 @@
-package br.com.devlucassantos.gestao_vagas.modules.job.useCasess;
+package br.com.devlucassantos.gestao_vagas.modules.job.useCases;
 
 import br.com.devlucassantos.gestao_vagas.modules.job.entities.JobEntity;
 import br.com.devlucassantos.gestao_vagas.modules.job.repositories.JobRepository;

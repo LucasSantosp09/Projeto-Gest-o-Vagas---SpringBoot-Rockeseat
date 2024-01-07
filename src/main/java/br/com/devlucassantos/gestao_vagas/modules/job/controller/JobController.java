@@ -1,7 +1,7 @@
 package br.com.devlucassantos.gestao_vagas.modules.job.controller;
 
 import br.com.devlucassantos.gestao_vagas.modules.job.entities.JobEntity;
-import br.com.devlucassantos.gestao_vagas.modules.job.useCasess.CreateJobUseCase;
+import br.com.devlucassantos.gestao_vagas.modules.job.useCases.CreateJobUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
