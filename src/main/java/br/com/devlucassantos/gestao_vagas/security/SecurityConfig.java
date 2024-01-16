@@ -14,7 +14,6 @@ public class SecurityConfig {
 
     @Autowired
     private SecutiryFilter secutiryFilter;
-
     @Autowired
     private SecurityCandidateFilter securityCandidateFilter;
 
@@ -24,13 +23,15 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/candidate/").permitAll()
                             .requestMatchers("/company/").permitAll()
-                            .requestMatchers("/auth/company").permitAll()
+                            .requestMatchers("/company/auth").permitAll()
                             .requestMatchers("/candidate/auth").permitAll();
                     auth.anyRequest().authenticated();
                 })
-                .addFilterBefore(secutiryFilter, BasicAuthenticationFilter.class)
-                .addFilterBefore(securityCandidateFilter,BasicAuthenticationFilter.class );
+                .addFilterBefore(securityCandidateFilter,BasicAuthenticationFilter.class )
+                .addFilterBefore(secutiryFilter, BasicAuthenticationFilter.class);
 
+
+    ;
         return http.build();
     }
 
