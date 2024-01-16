@@ -33,6 +33,8 @@ public class SecurityConfig {
                 .addFilterBefore(secutiryFilter, BasicAuthenticationFilter.class);
 
 
+
+
     ;
         return http.build();
     }
