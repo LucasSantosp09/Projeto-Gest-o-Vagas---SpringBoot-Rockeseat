@@ -65,7 +65,7 @@ public class CandidateController {
     @PreAuthorize("hasRole('CANDIDATE')")
     @Tag(name ="Candidato", description = "Informações do candidato")
     @Operation(summary = "Listagem de vagas disponíveis para o candidato",
-            description = "Essa função é responsável por listaar todas as vagas, baseada no filtro")
+            description = "Essa função é responsável por listar todas as vagas, baseada no filtro")
     @ApiResponses(
             @ApiResponse(responseCode = "200", content = {
                     @Content(
